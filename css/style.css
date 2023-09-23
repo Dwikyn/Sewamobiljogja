@@ -291,7 +291,7 @@ body {
 
 .service .row .box-service {
   width: 200px;
-  height: 300px;
+  height: 225px;
   background-color: #fff;
   box-shadow: 2px 2px 14px gray;
   border-radius: 1rem;
@@ -351,8 +351,8 @@ body {
 
 .packages .row .product-box {
   position: relative;
-  width: 300px;
-  height: 470px;
+  width: 350px;
+  height: 650px;
   box-shadow: 2px 2px 14px gray;
   border-radius: 1rem;
   display: flex;
@@ -385,7 +385,7 @@ body {
   color: var(--lainnya);
 }
 
-.packages .row .product-box .product-price {
+.packages .row .product-box .product-info {
   font-size: 1rem;
   background: var(--lainnya);
   color: #fff;
@@ -395,14 +395,31 @@ body {
   margin: 1rem auto 1rem;
 }
 
-.packages .row .product-box .stars-product {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.packages .row .product-box .product-keterangan {
+  text-align: left;
+  margin: 1.3rem;
 }
 
-.packages .row .product-box .stars-product .stars {
-  color: var(--lainnya);
+.packages .row .product-box .product-price {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  background-color: #0096b2;
+  width: 175px;
+  margin: auto;
+}
+
+.packages .row .product-box .ceklist {
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 0.3rem;
+  text-align: left;
+  flex-direction: column;
+}
+
+.packages .row .product-box .include-product .icon {
+  color: var(--primary);
   font-size: 1rem;
 }
 
@@ -410,7 +427,7 @@ body {
   font-size: 1.2rem;
   font-weight: 500;
   background: var(--primary);
-  width: 10rem;
+  width: 15rem;
   border-radius: 2rem;
   margin: auto;
   color: #fff;
@@ -596,10 +613,10 @@ footer .creadit p {
     font-size: 55%;
   }
   .service .row .box-service {
-    height: 220px;
+    height: 175px;
   }
   .packages .row .product-box {
-    height: 450px;
+    height: 500px;
   }
 
   .contact::before {
